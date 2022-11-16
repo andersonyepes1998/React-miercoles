@@ -1,3 +1,7 @@
+import '../Home/Home.css';
+
+import { Footer } from '../Footer/footer';
+
 export function Integrantes(){
 
     let integrantes = [
@@ -27,30 +31,31 @@ export function Integrantes(){
         },
     ]
 
-
-
-
     return(
       
-        <div className="row row-cols-1 row-cols-md-4 g-1 mt-5 border-0">
-            {
-                integrantes.map(function(integrante){
-                    return(
-                        <>
-                            <div className="col mt-3 bg-dark p-5">
-                                <div className="card h-100 ">
-                                    <h2 className="text-center fw-bold">{integrante.nombre}</h2>
-                                    <img src={integrante.fotografia} alt="foto" className="img-fluid-w-100 h-100"/>
-                                    <br/>
-                                    <h4 className="text-center">Rol: {integrante.instrumento}</h4>
-                                    <h6 className="text-center">Edad: {integrante.edad} años</h6>
+        <>
+            <h1 className="title">Nuestros Integrantes</h1>
+            <div className="row row-cols-1 row-cols-md-4 g-1 mt-3 border-0">
+                {
+                    integrantes.map(function(integrante){
+                        return(
+                            <>
+                                <div className="col mt-3 p-5">
+                                    <div className="card h-100 ">
+                                        <h2 className="text-center fw-bold">{integrante.nombre}</h2>
+                                        <img src={integrante.fotografia} alt="foto" className="img-fluid-w-100 h-100"/>
+                                        <br/>
+                                        <h4 className="text-center">Rol: {integrante.instrumento}</h4>
+                                        <h6 className="text-center">Edad: {integrante.edad} años</h6>
+                                    </div>
                                 </div>
-                            </div>
-                        </>
-                    )
-                })
-            }
-        </div>
-
+                                
+                            </>
+                        )
+                    })
+                }
+            </div>
+            <Footer></Footer>
+        </>
     )
 }
