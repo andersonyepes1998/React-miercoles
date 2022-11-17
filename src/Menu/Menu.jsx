@@ -17,13 +17,13 @@ export function Menu(){
                     <Link className="nav-link active texto" aria-current="page" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link texto" to="historia">Historias</Link>
+                    <Link className="nav-link texto" to="/historia">Historias</Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link texto" to="integrantes">Integrantes</Link>
+                    <Link className="nav-link texto" to="/integrantes">Integrantes</Link>
                     </li>
                     <li className="nav-item">
-                    <Link className="nav-link texto" to="music">Music</Link>
+                    <Link className="nav-link texto" to="/music">Musica</Link>
                     </li>
                 </ul>
                 </div>
